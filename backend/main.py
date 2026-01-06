@@ -2,6 +2,13 @@
 Tender AI Platform - FastAPI Backend
 Main entry point.
 """
+import sys
+import asyncio
+
+# Fix for Windows + Playwright + asyncio compatibility
+if sys.platform == "win32":
+    asyncio.set_event_loop_policy(asyncio.WindowsProactorEventLoopPolicy())
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
