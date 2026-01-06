@@ -1,0 +1,42 @@
+# Tender AI Platform - Python Backend Requirements
+# Compatible with Python 3.11, 3.13, 3.14
+
+# Web Framework
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+python-multipart==0.0.18
+
+# Database
+psycopg2-binary==2.9.10
+sqlalchemy==2.0.36
+
+# HTTP Client
+httpx==0.28.1
+aiohttp==3.11.11
+
+# Playwright for scraping
+playwright==1.49.1
+
+# Document Processing
+pypdf==5.1.0
+python-docx==1.1.2
+openpyxl==3.1.5
+pandas==2.2.3
+
+# OCR (CPU-only)
+paddlepaddle==2.6.2
+paddleocr==2.9.1
+
+# AI
+openai==1.58.1  # DeepSeek uses OpenAI-compatible API
+
+# Scheduling
+apscheduler==3.10.4
+
+# Utils
+python-dotenv==1.0.1
+pydantic==2.10.4
+pydantic-settings==2.7.0
+
+# Date handling
+python-dateutil==2.9.0.post0
